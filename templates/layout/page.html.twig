@@ -42,7 +42,7 @@
  * @see html.html.twig
  */
 #}
-<div class="layout-container">
+<div >
 
   <nav class="navbar navbar-expand-lg bg-light">
     <div class="container-fluid">
@@ -57,25 +57,24 @@
     </div>
   </nav>
 
-  <main class="main-content" role="main">
+  <main class=".container row mx-2" role="main">
     <a id="main-content" tabindex="-1"></a>{# link is in html.html.twig #}
-
-
-    {% if page.sidebar_left %}
-      <aside class="layout-sidebar-first" role="complementary">
+    <aside class="col-lg-2" role="complementary">
+      {% if page.sidebar_left %}
         {{ page.sidebar_left }}
-      </aside>
-    {% endif %}
+      {% endif %}
+    </aside>
 
-    <div class="layout-content">
+    <div class="col-lg-8">
       {{ page.content }}
     </div>{# /.layout-content #}
 
-    {% if page.sidebar_second %}
-      <aside class="layout-sidebar-second" role="complementary">
+
+    <aside class="col-lg-2" role="complementary">
+      {% if page.sidebar_second %}
         {{ page.sidebar_second }}
-      </aside>
-    {% endif %}
+      {% endif %}
+    </aside>
 
   </main>
 

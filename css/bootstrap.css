@@ -10875,6 +10875,10 @@ textarea.form-control-lg {
   }
 }
 /*custom*/
-
-
+.list-group-item  .list-group .list-group-item  {
+  border: none;
+}
+.card-header span{
+  font-size: 1.5rem;
+}
 /*# sourceMappingURL=bootstrap.css.map */

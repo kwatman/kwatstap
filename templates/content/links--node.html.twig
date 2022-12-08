@@ -34,7 +34,10 @@
  */
 #}
 {% if links %}
-  <div class="node__links">
-    {% include "links.html.twig" %}
-  </div>
+  {%- for item in links -%}
+      {#/*{% set link = item.link %}
+      {% set link = link|merge({ '#attributes': { 'class': [ 'card-link'] }}) %}
+      {% set item = item|merge({link: link}) %}*/#}
+      {{ item.link }}
+  {%- endfor -%}
 {% endif %}
