@@ -1,0 +1,28 @@
+name: kwatstap
+type: theme
+'base theme': stable9
+starterkit: true
+version: VERSION
+libraries:
+  - kwatstap/base
+  - kwatstap/messages
+  - core/normalize
+libraries-extend:
+  user/drupal.user:
+    - kwatstap/user
+  core/drupal.dropbutton:
+    - kwatstap/dropbutton
+  core/drupal.dialog:
+    - kwatstap/dialog
+  file/drupal.file:
+    - kwatstap/file
+  core/drupal.progress:
+    - kwatstap/progress
+core_version_requirement: ^9
+generator: 'starterkit_theme:9.4.8'
+regions:
+  navbar_title: 'Navbar title'
+  navbar_main: 'Navbar main'
+  navbar_right: 'Navbar right'
+  content: 'Content'
+  sidebar_left: 'Sidebar left'
